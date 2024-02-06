@@ -4,6 +4,6 @@ export async function createThread(
 ) {
     for (;;) {
         Array.from({ length: numberOfThreads }).forEach(() => thread());
-        await new Promise(resolve => setTimeout(resolve, 10));
+        await new Promise(resolve => setTimeout(resolve, 5));
     }
 }
