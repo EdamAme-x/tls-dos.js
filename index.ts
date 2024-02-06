@@ -9,6 +9,8 @@ if (!url) {
     Deno.exit(1);
 }
 
+console.log("\x1b[32m[!]\x1b[0m Target: " + url);
+
 const oneResult = async () => {
     const headers = createSpoof();
     try {
