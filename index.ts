@@ -21,4 +21,4 @@ const oneResult = async () => {
     }
 }
 
-createThread(oneResult, 10);
+createThread(oneResult, 20);
