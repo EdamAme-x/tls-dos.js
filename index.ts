@@ -15,9 +15,9 @@ const oneResult = async () => {
         await gotScraping({
             url,
             headers
-        });
+        })
     }catch (_) {
-        console.error("Rate limit reached");
+        console.error("\x1b[31m[X]\x1b[0m Reconnecting....");
     }
 }
 
