@@ -30,5 +30,7 @@ export function createSpoof() {
     "x-real-ip": ip,
     "user-agent": createUserAgent(),
     "cookie": createCookie(),
+    "cache-control": "no-cache",
+    "pragma": "no-cache",
   };
 }
