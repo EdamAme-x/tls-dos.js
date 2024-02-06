@@ -2,6 +2,10 @@
 
 TLS DoS Client
 
+- ip spoof
+- cookie flood
+- async
+
 1. Install Deno
 2. `deno task start <url>`
 
