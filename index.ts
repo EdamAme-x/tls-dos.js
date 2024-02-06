@@ -1,5 +1,6 @@
 import { gotScraping } from 'npm:got-scraping';
 import { createSpoof } from './createSpoof/index.ts';
+import { createThread } from "./createThread/index.ts";
 
 const url = Deno.args[0];
 
@@ -8,9 +9,16 @@ if (!url) {
     Deno.exit(1);
 }
 
-const response = await gotScraping({
-    url: url,
-    headers: createSpoof()
-});
+const oneResult = async () => {
+    const headers = createSpoof();
+    try {
+        await gotScraping({
+            url,
+            headers
+        });
+    }catch (_) {
+        console.error("Rate limit reached");
+    }
+}
 
-console.log(response.body.toString())
+createThread(oneResult, 10);
