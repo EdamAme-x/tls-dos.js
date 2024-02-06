@@ -1,0 +1,15 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "npm:node-tls": "npm:node-tls@0.10.2"
+    },
+    "npm": {
+      "node-tls@0.10.2": {
+        "integrity": "sha512-mYWYT1Aj7ywbsfC519LL7A60lxu/e9LWKD8Sin75wA/6wAt9Kb8EhIf8ydrrx8wsuqkZdEplZ3GanFeKyOduEQ==",
+        "dependencies": {}
+      }
+    }
+  },
+  "remote": {}
+}
