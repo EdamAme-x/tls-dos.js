@@ -1,6 +1,7 @@
 {
   "tasks": {
     "start": "deno run -A --unstable ./index.ts",
+    "start-proxy": "deno run -A --unstable ./proxy.ts",
     "dev": "deno run -A --unstable --watch ./index.ts"
   }
 }

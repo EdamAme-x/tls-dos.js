@@ -14,7 +14,7 @@ console.log("\x1b[32m[!]\x1b[0m Target: " + url);
 const oneResult = async () => {
     const headers = createSpoof();
     try {
-        await gotScraping({
+        await gotScraping(url, {
             url,
             headers
         })
@@ -23,4 +23,4 @@ const oneResult = async () => {
     }
 }
 
-createThread(oneResult, 200);
+createThread(oneResult, 400);
